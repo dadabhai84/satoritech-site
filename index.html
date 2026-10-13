@@ -3,99 +3,251 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Contractor 2.0</title>
+    <title>SatoriTech | Infrastructure Transformation Through Clarity</title>
 
     <style>
-        body {
-            font-family: Arial, sans-serif;
-            background-color: #f5f7fa;
-            max-width: 1000px;
-            margin: 40px auto;
-            padding: 20px;
-            line-height: 1.6;
-            color: #333;
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
         }
 
-        .card {
-            background: white;
-            padding: 25px;
-            margin-bottom: 20px;
-            border-radius: 12px;
-            box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+        body {
+            font-family: "Segoe UI", Arial, sans-serif;
+            background: #111827;
+            color: #ffffff;
+            line-height: 1.7;
+        }
+
+        .hero {
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+
+            background-image:
+                linear-gradient(
+                    rgba(0,0,0,0.65),
+                    rgba(0,0,0,0.55)
+                ),
+                url('images/satori-hero.jpg');
+
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+
+            padding: 60px 20px;
+        }
+
+        .hero-content {
+            max-width: 950px;
+            text-align: center;
         }
 
         h1 {
-            color: #0078d4;
-            margin-top: 0;
+            font-size: 4rem;
+            font-weight: 700;
+            margin-bottom: 10px;
+            letter-spacing: 2px;
         }
 
-        h2 {
-            color: #005a9e;
+        .tagline {
+            font-size: 1.4rem;
+            color: #7dd3fc;
+            margin-bottom: 40px;
         }
 
-        ul {
-            padding-left: 20px;
+        .hero p {
+            font-size: 1.15rem;
+            margin-bottom: 25px;
         }
 
-        .footer {
+        .cta-button {
+            display: inline-block;
+            margin-top: 20px;
+            padding: 14px 32px;
+            text-decoration: none;
+            color: white;
+            border: 2px solid #38bdf8;
+            border-radius: 6px;
+            transition: all 0.3s ease;
+        }
+
+        .cta-button:hover {
+            background: #38bdf8;
+            color: #082f49;
+        }
+
+        .section {
+            max-width: 1200px;
+            margin: auto;
+            padding: 80px 20px;
+        }
+
+        .section h2 {
             text-align: center;
-            color: #666;
-            margin-top: 30px;
+            margin-bottom: 50px;
+            font-size: 2.2rem;
+            color: #7dd3fc;
+        }
+
+        .service-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit,minmax(250px,1fr));
+            gap: 30px;
+        }
+
+        .service-card {
+            background: #1f2937;
+            padding: 30px;
+            border-radius: 12px;
+        }
+
+        .service-card h3 {
+            margin-bottom: 15px;
+            color: #7dd3fc;
+        }
+
+        footer {
+            text-align: center;
+            padding: 40px;
+            color: #9ca3af;
+            border-top: 1px solid #374151;
+        }
+
+        @media (max-width: 768px) {
+
+            h1 {
+                font-size: 2.8rem;
+            }
+
+            .tagline {
+                font-size: 1.1rem;
+            }
+
+            .hero p {
+                font-size: 1rem;
+            }
         }
     </style>
 </head>
+
 <body>
 
-    <div class="card">
-        <h1>Contractor 2.0</h1>
-        <p><strong>Shamik Ghosh</strong></p>
-        <p>Infrastructure Engineer | Cloud Transformation Consultant</p>
-    </div>
+<section class="hero">
 
-    <div class="card">
-        <h2>About Me</h2>
-        <p>
-            Experienced infrastructure engineer specialising in cloud,
-            virtualisation and migration projects. Currently focused on
-            VMware-to-Azure transformations, Azure Arc, Azure Local and
-            hybrid cloud technologies.
+    <div class="hero-content">
+
+        <h1>SatoriTech</h1>
+
+        <p class="tagline">
+            Infrastructure Transformation Through Clarity
         </p>
-    </div>
 
-    <div class="card">
-        <h2>Current Focus Areas</h2>
-        <ul>
-            <li>VMware to Azure Migrations</li>
-            <li>Azure Local</li>
-            <li>Azure Arc</li>
-            <li>Hyper-V</li>
-            <li>Hybrid Cloud Solutions</li>
-            <li>Infrastructure Transformation</li>
-        </ul>
-    </div>
-
-    <div class="card">
-        <h2>Contractor 2.0 Vision</h2>
         <p>
-            Focusing on transformation rather than support. Helping
-            organisations modernise infrastructure, exit legacy platforms,
-            and adopt Microsoft hybrid cloud technologies.
+            In Zen Buddhism, <strong>Satori</strong> refers to a moment of
+            awakening, a sudden understanding of the true nature of things.
         </p>
-    </div>
 
-    <div class="card">
-        <h2>Connect</h2>
         <p>
-            LinkedIn:
-            https://www.linkedin.com
-                View Profile
-            </a>
+            In technology, meaningful transformation begins with a similar
+            realisation. Not every workload belongs in the cloud. Not every
+            workload should remain on-premises. Success lies in understanding
+            the strengths of both and applying them where they create the
+            greatest business value.
         </p>
+
+        <p>
+            SatoriTech was founded on a simple principle: technology decisions
+            should be driven by outcomes, not ideology. The answer is rarely
+            "all cloud" or "all on-premises". The answer is finding the right
+            balance between innovation, practicality and long-term operational
+            success.
+        </p>
+
+        <p>
+            Specialising in infrastructure transformation, VMware to Azure and
+            Azure Local migrations, Infrastructure as Code and enterprise
+            modernisation projects, SatoriTech helps organisations navigate
+            complex change with confidence and clarity.
+        </p>
+
+        <a href="mailto:contact@satoritech.online" class="cta-button">
+            Start the Conversation
+        </a>
+
     </div>
 
-    <div class="footer">
-        © 2026 Contractor 2.0
+</section>
+
+<section class="section">
+
+    <h2>Core Expertise</h2>
+
+    <div class="service-grid">
+
+        <div class="service-card">
+            <h3>Infrastructure Transformation</h3>
+            <p>
+                Strategic transformation programmes focused on resilience,
+                scalability, operational efficiency and measurable business outcomes.
+            </p>
+        </div>
+
+        <div class="service-card">
+            <h3>VMware to Azure & Azure Local</h3>
+            <p>
+                End-to-end assessment, planning and migration services for
+                organisations modernising their infrastructure platforms.
+            </p>
+        </div>
+
+        <div class="service-card">
+            <h3>Infrastructure as Code</h3>
+            <p>
+                Automated, repeatable deployments using Terraform, Bicep and
+                ARM templates to increase consistency and reduce operational risk.
+            </p>
+        </div>
+
+        <div class="service-card">
+            <h3>Project Delivery</h3>
+            <p>
+                Focused delivery of transformation initiatives, migration
+                projects and modernisation programmes that create lasting value.
+            </p>
+        </div>
+
     </div>
+
+</section>
+
+<section class="section">
+
+    <h2>The Satori Philosophy</h2>
+
+    <p style="text-align:center; max-width:900px; margin:auto; font-size:1.1rem;">
+
+        Satori is often described as a moment of profound insight.
+        For organisations facing technological change, that insight is the
+        recognition that successful transformation is not about chasing trends,
+        but about making clear, informed decisions that align technology with
+        business objectives.
+
+        <br><br>
+
+        Whether modernising a datacentre, migrating from VMware to Azure or
+        Azure Local, or adopting Infrastructure as Code, every project begins
+        with the same goal: creating clarity from complexity.
+
+    </p>
+
+</section>
+
+<footer>
+    © 2026 SatoriTech | Infrastructure Transformation Through Clarity
+</footer>
 
 </body>
 </html>
+``
